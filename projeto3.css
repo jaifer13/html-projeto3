@@ -1,0 +1,234 @@
+main {
+
+  
+
+}
+
+body {
+
+    background-color: gold;
+}
+
+ul,
+li,
+p {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+    text-align: center;
+
+
+}
+
+a {
+    text-decoration: nome;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.slide1 {
+    margin-top: 100px;
+}
+
+.header {
+    background: #4169e1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    z-index: 9;
+
+
+
+
+}
+
+.logo {
+    display: block;
+    padding: 5px;
+    margin-left: 500px;
+
+
+}
+
+i#burguer {
+    background-color: rgb(48, 48, 48);
+    color: gold;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 20px;
+    transition-property:background-color, color;
+    transition-duration: 2s,2s;
+
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.menu {
+    display: none;
+    flex-wrap: wrap;
+
+}
+
+.menu li {
+
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    background: gold;
+    border-radius: 5px;
+
+}
+
+
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 950px;
+    padding: 10px;
+    margin: 0 auto;
+    background: #4169e1;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 950px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #4169e1;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 950px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #4169e1;
+    border-radius: 10px;
+    gap: 10px;
+
+}
+
+
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 950px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #4169e1;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+
+
+.cartao {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.card {
+    background: #4169e1;
+
+}
+
+.card>img {
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+@keyframes animacao {
+    from {
+        background-image: url(img/tigres5.jpg);
+    }
+
+    to {
+        background-image: url(img/bandeira2.jpg);
+    }
+}
+
+.grid5 {
+    grid-template-columns: auto;
+    margin: auto;
+    margin-top: 80px;
+    display: grid;
+    height: 60vw;
+    width: 90vw;
+    background-image: url(img/tigres5.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: animacao;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+@media (max-width:600px) {
+    .grid1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid5 {
+        grid-template-columns: min-content;
+    }
+
+
+
+}
