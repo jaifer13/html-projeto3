@@ -23,7 +23,7 @@ p {
 }
 
 a {
-    text-decoration: nome;
+    text-decoration: none;
     color: black;
 }
 
@@ -63,6 +63,8 @@ img {
     display: block;
     padding: 5px;
     margin-left: 500px;
+    width: 100px;
+    height: auto;
 
 
 }
